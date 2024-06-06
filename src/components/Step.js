@@ -44,7 +44,7 @@ const Step = (props) => {
       ) : (
         <>
           <button onClick={(e)=>props.handleCurrentState(e,{previous:true,next:true,submit:false})}>previous</button>
-          <button onClick={(e)=>e.preventDefault()}>submit</button>
+          <button onClick={(e)=>e.preventDefault()}>submit </button>
         </>
       )}
     </form>

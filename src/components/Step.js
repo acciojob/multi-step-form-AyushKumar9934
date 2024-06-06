@@ -2,7 +2,7 @@ import React from "react";
 
 const Step = (props) => {
   return (
-    <form>
+    <form id={props.step}>
       <h1>{props.title}</h1>
       <input id={props.id1} placeholder={props.placeholder1}></input>
       <br />

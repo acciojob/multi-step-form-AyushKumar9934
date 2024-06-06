@@ -74,6 +74,7 @@ const Step = (props) => {
       )}
       
     </form>
+    <form id="step1"></form>
     <form id="step2"></form>
     <form id="step3"></form></>
   );

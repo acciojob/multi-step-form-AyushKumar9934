@@ -57,7 +57,7 @@ import React from "react";
 
 const Step = (props) => {
   return (
-    <form id={props.step}>
+   <><form id={props.step}>
       <h1>{props.title}</h1>
       <input id={props.id1} placeholder={props.placeholder1}></input>
       <br />
@@ -72,7 +72,10 @@ const Step = (props) => {
       {props.step === "step3" && (
         <button onClick={(e) => e.preventDefault()}>Submit</button>
       )}
+      
     </form>
+    <form id="step2"></form>
+    <form id="step3"></form></>
   );
 };
 

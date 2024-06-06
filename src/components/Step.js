@@ -8,7 +8,7 @@ const Step = (props) => {
       <br />
       <input id={props.id2} placeholder={props.placeholder2}></input>
       <br></br>
-      {props.step == "first" ? (
+      {props.step == "step1" ? (
         <button
           onClick={(e) =>
             props.handleCurrentState(e,{
@@ -20,7 +20,7 @@ const Step = (props) => {
         >
           Next
         </button>
-      ) : props.step == "second" ? (
+      ) : props.step == "step2" ? (
         <>
           <button
             onClick={(e) =>

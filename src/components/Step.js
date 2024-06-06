@@ -64,13 +64,13 @@ const Step = (props) => {
       <input id={props.id2} placeholder={props.placeholder2}></input>
       <br></br>
       {props.step !== "step3" && (
-        <button onClick={(e) => props.handleButtonClick(e, "next")}>Next</button>
+        <input type="button" onClick={(e) => props.handleButtonClick(e, "next")}>Next</input>
       )}
       {props.step !== "step1" && (
-        <button onClick={(e) => props.handleButtonClick(e, "previous")}>Previous</button>
+        <input type="button" onClick={(e) => props.handleButtonClick(e, "previous")}>Previous</input>
       )}
       {props.step === "step3" && (
-        <button onClick={(e) => e.preventDefault()}>Submit</button>
+        <input type="button" onClick={(e) => e.preventDefault()}>Submit</input>
       )}
       
     </form>
